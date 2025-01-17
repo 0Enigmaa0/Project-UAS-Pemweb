@@ -63,9 +63,17 @@ class Kernel extends HttpKernel
         'precognitive' => \Illuminate\Foundation\Http\Middleware\HandlePrecognitiveRequests::class,
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+    
 
         // Tambahkan middleware 'role' di sini
         'role' => \App\Http\Middleware\RoleMiddleware::class,
     ];
+    protected $routeMiddleware = [
+        'auth' => \App\Http\Middleware\Authenticate::class,
+        // Middleware lain...
+        'is_admin' => \App\Http\Middleware\IsAdmin::class,
+        
+    ];
+    
+    
 }

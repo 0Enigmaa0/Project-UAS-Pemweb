@@ -1,6 +1,6 @@
 @extends('layouts.app') <!-- Pastikan menggunakan layout utama -->
 
-@section('content')
+@section('fullwidth')
 <div class="hero text-center mb-5">
     <div class="container">
         <h1 class="display-4 fw-bold">Selamat Datang Kembali!</h1>
@@ -56,7 +56,6 @@
 
                     <div class="text-center mt-4">
                         <p>Belum punya akun? <a href="{{ route('register') }}" class="text-primary">Daftar di sini</a>.</p>
-                        <p><a href="{{ route('password.request') }}" class="text-primary">Lupa kata sandi?</a></p>
                     </div>
                 </div>
             </div>

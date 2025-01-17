@@ -1,6 +1,6 @@
 @extends('layouts.app') <!-- Menggunakan layout utama -->
 
-@section('content')
+@section('fullwidth')
 <!-- Hero Section -->
 <div class="hero text-center mb-5">
     <div class="container">

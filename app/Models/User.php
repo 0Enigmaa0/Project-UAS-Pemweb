@@ -73,4 +73,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Answer::class, 'user_id');
     }
+
+    public function isAdmin()
+{
+    return $this->is_admin;
+}
+
 }
